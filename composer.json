@@ -1,13 +1,13 @@
 {
-    "name": "tfmwl/laravel-xibo-api",
+    "name": "wimmie/laravel-xibo-api",
     "description": "A Laravel package for using the Xibo api",
     "keywords": [
-        "tfmwl",
+        "wimmie",
         "laravel-xibo-api",
         "laravel",
         "xibo"
     ],
-    "homepage": "https://github.com/tfmwl/laravel-xibo-api",
+    "homepage": "https://github.com/wimmie/laravel-xibo-api",
     "license": "MIT",
     "authors": [
         {
@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Tfmwl\\XiboApi\\": "src"
+            "Wimmie\\XiboApi\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tfmwl\\XiboApi\\Tests\\": "tests"
+            "Wimmie\\XiboApi\\Tests\\": "tests"
         }
     },
     "scripts": {
