@@ -16,6 +16,7 @@
             "role": "Developer"
         }
     ],
+    "version": "0.3.0", // Add this line with the desired version
     "require": {
         "php": "^7.4|^8.0",
         "ext-curl": "*",
