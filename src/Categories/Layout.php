@@ -84,6 +84,29 @@ class Layout extends CategoryWithCrud
     }
 
     /**
+     * Checkout Layout
+     * @param int $id
+     * @return mixed
+     */
+    public function retire(int $id)
+    {
+        $url = $this->xiboApi->generateUrl($this->name, 'retire', $id);
+        return $this->xiboApi->sendRequest($url, XiboApi::REQUEST_PUT);
+    }
+
+    /**
+     * Publish Layout
+     * @param int $id
+     * @param array $data
+     * @return mixed
+     */
+    public function unretire(int $id)
+    {
+        $url = $this->xiboApi->generateUrl($this->name, 'unretire', $id);
+        return $this->xiboApi->sendRequest($url, XiboApi::REQUEST_PUT);
+    }
+
+    /**
      * Discard Layout
      * @param int $id
      * @return mixed

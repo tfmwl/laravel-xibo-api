@@ -24,4 +24,10 @@ class Campaign extends CategoryWithCrud
         $url = $this->xiboApi->generateUrl($this->name, 'layout/assign', $id);
         return $this->xiboApi->sendRequest($url, XiboApi::REQUEST_POST, $data);
     }
+
+    public function removeLayout(int $id, array $data)
+    {
+        $url = $this->xiboApi->generateUrl($this->name, 'layout/remove', $id);
+        return $this->xiboApi->sendRequest($url, XiboApi::REQUEST_DELETE, $data);
+    }
 }
